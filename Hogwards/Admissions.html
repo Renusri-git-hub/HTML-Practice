@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Admissions- Hogwarts</title>
+</head>
+
+<body>
+    <h2>
+        <center>Want to join in Hogwarts?</center>
+    </h2>
+    <h3>
+        <center>Please fill this form</center>
+    </h3>
+
+    <form>
+        <fieldset>
+            <legend>
+                <h3>Basic Information</h3>
+            </legend>
+
+            <label for="fullname">Full Name: </label>
+            <input type="text" id="fullname" required placeholder="Full Name">
+
+            <br><br>
+
+            <label for="birtdate">Date of Birth: </label>
+            <input type="date" id="birthdate" required>
+
+            <br><br>
+
+            <label for="blood-status">Blood Status: </label>
+            <select id="blood-status">
+                <option value="Select an option"> --Select--</option>
+                <option value="Muggle-born">Muggle-Born</option>
+                <option value="Pure-blood">Pure-Blood</option>
+                <option value="Half-Blood">Half-Blood</option>
+            </select>
+
+            <br><br>
+
+            <label for="parent-name">Parent/Guardian Name: </label>
+            <input type="text" id="parent-name" required>
+
+            <br><br>
+
+            <label for="address">Address: </label>
+            <textarea id="address" cols="50" rows="10"></textarea>
+
+            <br><br>
+
+            <label for="contact">Contact: </label>
+            <input type="text" id="contact" required placeholder="Contact">
+
+            <br><br>
+
+            <label for="email">Owl Mail(if applicable): </label>
+            <input type="email" id="email">
+
+        </fieldset>
+
+        <fieldset>
+            <legend>
+                <h3>Magical Background:</h3>
+            </legend>
+
+            <label for="prior">Do you have prior magical knowledge: </label>
+            <input type="radio" id="prior" name="option" value="yes">Yes
+            <input type="radio" id="prior" name="option" value="no">No
+
+            <br><br>
+
+            <label for="relative">Any known magical reltives?(If yes, please specify) </label>
+            <input type="radio" id="relative" name="option" value="yes">Yes
+            <input type="radio" id="relative" name="option" value="no">No
+
+            <input type="text">
+
+            <br><br>
+
+            <label for="acc-magic">Have you experienced accidental magic before?</label>
+            <input type="radio" id="acc-magic" name="option" value="yes">Yes
+            <input type="radio" id="acc-magic" name="option" value="no">No
+
+        </fieldset>
+
+        <fieldset>
+            <legend>
+                <h3>Hogwarts Preferences</h3>
+            </legend>
+
+            <label for="house">Preferres House(if any): </label>
+            <select id="house">
+                <option value="Select an option"> --Select--</option>
+                <option value="Gryffindor">Gryffindor</option>
+                <option value="Hufflepuff">Hufflepuff</option>
+                <option value="Ravenclaw">Ravenclaw</option>
+                <option value="Slytherin">Slytherin</option>
+            </select>
+
+            <br><br>
+
+            <label for="elective">Do you have a preference for any elective subjects?(If yes, please specify)</label>
+            <input type="radio" id="elective" name="option" value="yes">Yes
+            <input type="radio" id="relative" name="option" value="no">No
+
+            <input type="text">
+
+            <br><br>
+            <label for="quidditch">Would you be interested in joining the Quidditch team?</label>
+            <input type="radio" id="quidditch" name="option" value="yes">Yes
+            <input type="radio" id="quidditch" name="option" value="no">No
+
+            <br><br>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>
+                <h3>Parent/Guardian Consent</h3>
+            </legend>
+
+            <label for="loc">Upload letter of consent</label>
+            <input type="file" id="loc">
+        </fieldset>
+
+        <br><br>
+
+        <input type="checkbox" id="agree">
+        <label for="agree">I agree to use my details for future references</label>
+
+        <br><br>
+        <button>Submit</button>&nbsp;&nbsp;&nbsp;&nbsp;
+        <button>Reset</button>
+    </form>
+</body>
+
+</html>
